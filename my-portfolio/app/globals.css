@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@custom-variant ipad{
+  @media screen and (max-width:744px) {
+    @slot
+    
+  }
+}
+
+@custom-variant desktop{
+  @media screen and (min-width:1032px) {
+    @slot
+    
+  }
+}
+
+/* @theme{
+  --breakpoint-ipad:min-width(744px);
+  --breakpoint-desktop:min-width(810px);
+} */
+
+:root {
+  --background: #090C15;
+  --text-color: #D9D9D9;
+  --border-color: #ebe4e4;
+}
+
+
+
+
+
+
+.hero{
+  color: var(--text-color);
+}
+
+
+.hero{
+  color: var(--text-color);
+}
+
+
+ 
+
+
+
+
+/* @theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+*/
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+} */
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  margin: 0;
+  padding: 0;
+  /* font-family: Arial, Helvetica, sans-serif; */
+}
+
+html{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+
