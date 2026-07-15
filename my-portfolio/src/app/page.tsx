@@ -2,11 +2,11 @@ import  style from "./scope.module.css";
 import Image from "next/image";
 import SkillCarousel from "./homecomponet/carousel";
 import FrameworkCard from "./homecomponet/imageCard";
-import { frameworkImage } from "@/lib/types";
+import { frameworkImage } from "@/src/lib/types";
 import DatabaseDropdown from "./homecomponet/skillcomponet";
 import Article1 from "./homecomponet/seeProjectbutton";
-import { pageProps } from "@/lib/types";
-import { sendAuth } from "@/lib/gitToken";
+import { pageProps } from "@/src/lib/types";
+import { sendAuth } from "@/src/lib/gitToken";
 import { handleContactForm } from "./actions";
 import Link from "next/link";
 
