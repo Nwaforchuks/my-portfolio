@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import { usePathname, useParams } from 'next/navigation';
 import Image from 'next/image';
-import mylogo from "../../public/home/image_8cceab99-removebg-preview.png";
+import mylogo from "../../../public/home/image_8cceab99-removebg-preview.png";
 import style from "../scope.module.css";
 import Link from 'next/link';
 

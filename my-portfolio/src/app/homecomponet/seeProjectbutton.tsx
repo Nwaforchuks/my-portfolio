@@ -2,8 +2,8 @@
 import { use, useState } from "react"
 import styles from "../scope.module.css"
 import Image from "next/image"
-import closebutton from "../../public/home/closebutton.svg"
-import sendbutton from "../../public/home/sendimg.svg"
+import closebutton from "../../../public/home/closebutton.svg"
+import sendbutton from "../../../public/home/sendimg.svg"
 
 export default function Article1(){
 
