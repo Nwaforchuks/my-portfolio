@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     template: "%s | Professional Web Developer",
   },
   description: "Experienced MERN stack web developer providing high-performing web design and development globally and locally in Lagos, Nigeria. Specialized in React, TailwindCSS, custom E-commerce. and Blog",
+  verification: {
+    google: "SVEyQsS4vdt98mcdGHJfY8t_kBgozWnG8k2NGzlehNQ",
+  },
   keywords: [
   // AI & Database Specialized Keywords (New)
   "AI website integration developer", 
