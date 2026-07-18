@@ -15,7 +15,7 @@ export default function FrameworkCard({ imageSrc, altText, title, description }:
             height={155}
             width={168}
             priority
-            className="object-cover object-top transform h-[155px] min-w-[i68px] rounded-b-[10px] w-full" 
+            className="object-cover object-top transform h-[155px] min-w-[68px] rounded-b-[10px] w-full" 
           />
         </div>
       </div>

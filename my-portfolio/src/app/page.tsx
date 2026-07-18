@@ -15,7 +15,60 @@ import Link from "next/link";
 export default async function Home(searchParams:pageProps) {
 
   let authStatusMessage = await sendAuth(searchParams)
+
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "ConstantineApp - MERN Stack Web Developer",
+    "image": "https://constantineapp.vercel.app/og-image.png", // Replace with your absolute image asset URL
+    "description": "Professional web development services available,  global remote contracts and local businesses in Lagos, Nigeria. Specializing in complete website creation, e-commerce platforms, site migration, and Figma UI Designs.",
+    "url": "https://constantineapp.vercel.app",
+    "priceRange": "$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Lagos",
+      "addressRegion": "Lagos State",
+      "addressCountry": "NG"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "6.5244", // Precise latitude coordinate for Lagos
+      "longitude": "3.3792" // Precise longitude coordinate for Lagos
+    },
+    "knowsAbout": [
+      "React", "TailwindCSS", "Node.js", "Express.js", "MongoDB", "Figma", "SQL", "Firebase", "HTML", "CSS", "JavaScript","RestApi", "AI Prompt Engineering", "Github Operations"
+    ],
+    "offers": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Complete Website Creation & E-commerce Development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Website Revamping, Modifications & Migration"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Blog Setup & Content Posting"
+        }
+      }
+    ]
+  };
   return (
+    <>
+    
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     <div className="w-full  ">
       <main className="flex flex-col justify-center items-center " >
         {
@@ -110,10 +163,14 @@ export default async function Home(searchParams:pageProps) {
             </h3>
 
             <p className="text-[#D9D9D9] text-[0.625rem] font-bold">
+              Looking to hire a professional website developer? wether you are searching
+              for expert near you in Lagos, Nigeria, or looking for remote engineer to bring
+              your ideas to life, I build clean, high performance web system.
               Passionate about solving complex problems through clean design and solid 
               execution.  My experience helps brands put their best ideas forward seamlessly.
               Specializing in stable development, scalable architecture, and data-driven chart 
-              design.
+              design, Let's create an exceptional online presence where client can easily see 
+              what your business has to offer.
             </p>
           </article>
 
@@ -207,5 +264,6 @@ export default async function Home(searchParams:pageProps) {
       
       </main>
     </div>
+    </>
   );
 }

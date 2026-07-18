@@ -69,13 +69,13 @@ export default function DatabaseDropdown() {
                       alt={altText}
                       width={1024}
                       height={1024}
-                      className={`${style.skillCardImage} rounded-top-[10px] `}
+                      className={`${style.skillCardImage} rounded-t-[10px] `}
                       
                     />
                   </div>
 
                   {/* Centered Sub-text Description */}
-                  <p className="text-center font-medium px-2 leading-relaxed bg-emerald-600 rounded-[10px]">
+                  <p className="text-center font-medium px-2 leading-relaxed bg-emerald-600 rounded-b-[10px]">
                     {description}
                   </p>
                   </div>)}
