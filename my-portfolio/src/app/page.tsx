@@ -25,8 +25,20 @@ export default async function Home(searchParams:pageProps) {
         }
 
         <section className={`${style.section1}`}>
+          <article>
 
-          <Article1/>
+            <h1>Building Scalable Digital Products with Modern Web Ecosystems</h1>
+            <p>
+              I am an experienced Full-Stack Web Developer specialized in engineering 
+              high-performance applications from scratch. By bridging the gap between 
+              pixel-perfect ReactJS frontends and highly reliable Node.js server architectures, 
+              I deliver rapid, secure, and SEO-optimized web experiences.
+            </p>
+
+              <Article1/>
+
+          </article>
+
 
           <article className={`${style.article2}`}>
             
@@ -35,7 +47,7 @@ export default async function Home(searchParams:pageProps) {
 
         </section>
 
-        <section id="stack" className="w-full mt-[1.75rem] flex flex-col justify-center items-center gap-y-[7px] min-w-[350px]">
+        <section id="stack" className="w-full  mt-[100px] flex flex-col justify-center items-center gap-y-[7px] min-w-[350px]">
           
          <h2 className="text-[#D9D9D9] font-bold text-[0.812rem] w-[90%] ">My Technical Stack</h2>
 
@@ -48,7 +60,7 @@ export default async function Home(searchParams:pageProps) {
          
         </section>
         
-        <section id="skills" className='w-full flex flex-col justify-center items-center mt-[40px] min-w-[350px]' >
+        <section id="skills" className='w-full flex flex-col justify-center items-center mt-[100px] min-w-[350px]' >
           
           <article className="w-[90%]"  >
             <h3 className="font-bold text-[0.8125rem] text-[#D9D9D9] mb-[20px] text-center ">Detailed Skills Section Matrix</h3>
@@ -68,7 +80,7 @@ export default async function Home(searchParams:pageProps) {
           </article>
         </section>
 
-        <div id="aboutme"  className=" md:flex md:flex-row md:mt-[4.9375rem] md:w-[95%] ">
+        <div id="aboutme"  className=" md:flex md:flex-row mt-[100px] md:w-[95%] ">
 
         <section className="w-full flex flex-col justify-center items-center sm:mt-[79px] md:mt-[1rem]">
           <article className="w-[90%] flex flex-col justify-center">
@@ -81,12 +93,17 @@ export default async function Home(searchParams:pageProps) {
             </p>
 
             <div className="text-[#D9D9D9] text-[0.8125rem] w-[55%] font-semibold bg-[#1771B1] rounded-[5px] h-[1.75rem] text-center cursor-pointer hover:opacity-90 active:opacity-65">
-              <a href={`https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}&scope=repo`}>GitHub</a>
+              <Link 
+              href={`https://github.com/login/oauth/authorize?client_id=${process.env.NEXT_PUBLIC_GITHUB_CLIENT_ID}&scope=repo`}
+              target="_blank"
+              >
+                GitHub
+              </Link>
             </div>
           </article>
         </section>
 
-        <section className="w-full flex flex-col justify-center items-center sm:mt-[1rem]">
+        <section className="w-full flex flex-col justify-center items-center sm:mt-10">
           <article className="w-[90%] flex flex-col justify-center mt-[1rem]">
             <h3  className="font-bold text-[0.9375rem] text-[#D9D9D9] w-[70%]">
               About My Path
@@ -106,12 +123,12 @@ export default async function Home(searchParams:pageProps) {
         
         
 
-        <section id="contact" className="w-full flex flex-col justify-center items-center mt-[1.125rem] md:mt-[6.25rem]">
+        <section id="contact" className="w-full flex flex-col justify-center items-center mt-10 ">
           
-          <article className=" w-[90%] flex flex-col justify-center">
+          <article className=" w-[90%] flex flex-col justify-center ">
             <hr className="border-[#CEC5C5] h-[0.5px] w-full bg-[#D9D9D9]"/>
 
-            <div className="flex flex-col justify-end w-full md:w-[24%]  ">
+            <div className="flex flex-col justify-end w-full md:w-[24%] mt-[100px]  ">
 
               <h3  className="font-bold text-[0.9375rem] text-[#D9D9D9] md:text[1.375]  mt-[0.29375rem] md:mt-[1rem]">
                 Get in touch to discuss your next big idea.
@@ -142,8 +159,8 @@ export default async function Home(searchParams:pageProps) {
 
             </div>
 
-            <div className="flex flex-col justify-start w-full mt-6 ">
-              <div className="flex flex-row w-full justify-end md:justify-start">
+            <div className="flex flex-col justify-start w-full mt-[65px] ">
+              <div className="flex flex-row w-full justify-end md:justify-start gap-2">
                 <Link
                 href="https://ng.linkedin.com/in/constantine-app-748623240"
                 target="_blank"
@@ -151,10 +168,10 @@ export default async function Home(searchParams:pageProps) {
                 >
 
                   <Image
-                   src={'/home/linkdin.png'}
+                   src={'/home/linkedinimg.png'}
                    alt="connect me on linkdin"
-                   width={80}
-                   height={80}
+                   width={30}
+                   height={30}
                   />
 
                 </Link>
@@ -166,10 +183,11 @@ export default async function Home(searchParams:pageProps) {
                 >
 
                   <Image
-                   src={'/home/whatsapp.png'}
+                   src={'/home/whatsappimg.png'}
                    alt="connect me on whatsapp"
-                   width={80}
-                   height={80}
+                   width={30}
+                   height={30}
+                   className="rounded-[50%]"
                    
                   />
 

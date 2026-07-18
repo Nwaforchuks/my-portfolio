@@ -59,9 +59,9 @@ export default function DatabaseDropdown() {
               </div>
 
               {/* 4. Overlay Content - Centered Vertically */}
-              {isExpanded && (
-                <div className={`mt-4 pt-4 text-sm text-[#D9D9D9] animate-fadeIn flex flex-col text-center   ${isExpanded? "": "justify-center"} items-center h-[calc(100%-4rem)] gap-4`}>
-                  
+              
+                <div className={`${style.skillcard} ${isExpanded ? style.skillcardImg : ""} mt-4 pt-4 text-sm text-[#D9D9D9] animate-fadeIn flex flex-col text-center   ${isExpanded? "": "justify-center"} items-center h-[calc(100%-4rem)] gap-4`}>
+                  {isExpanded && (<div>
                   {/* Full-width Image Wrapper Container */}
                   <div className="relative w-full h-auto">
                     <Image
@@ -69,18 +69,19 @@ export default function DatabaseDropdown() {
                       alt={altText}
                       width={1024}
                       height={1024}
-                      className={`${style.skillCardImage} rounded-[10px] `}
+                      className={`${style.skillCardImage} rounded-top-[10px] `}
                       
                     />
                   </div>
 
                   {/* Centered Sub-text Description */}
-                  <p className="text-center font-medium px-2 leading-relaxed">
+                  <p className="text-center font-medium px-2 leading-relaxed bg-emerald-600 rounded-[10px]">
                     {description}
                   </p>
+                  </div>)}
                   
                 </div>
-              )}
+              
             </div>
 
           </div>

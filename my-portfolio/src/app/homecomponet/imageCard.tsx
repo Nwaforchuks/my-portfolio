@@ -21,7 +21,7 @@ export default function FrameworkCard({ imageSrc, altText, title, description }:
       </div>
 
       {/* 2. Text Content Container */}
-      <div className="flex flex-col p-4 text-[#D9D9D9]">
+      <div className="flex flex-col pt-2 text-[#D9D9D9]">
         <h3 className="text-[0.812rem] font-bold leading-tight tracking-wide text-gray-100 text-center">
           {title}
         </h3>
