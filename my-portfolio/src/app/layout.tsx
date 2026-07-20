@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "MERN Stack Web Developer | Website Developer",
     template: "%s | Professional Web Developer",
   },
-  description: "Experienced MERN stack web developer providing high-performing web design and development globally and locally in Lagos, Nigeria. Specialized in React, TailwindCSS, custom E-commerce. and Blog",
+  description: "Experienced MERN stack web developer providing high-performing web design and development globally and locally. Specialized in React, TailwindCSS, custom E-commerce. and Blog and SEO-optimized web experiences",
   verification: {
     google: "SVEyQsS4vdt98mcdGHJfY8t_kBgozWnG8k2NGzlehNQ",
   },
