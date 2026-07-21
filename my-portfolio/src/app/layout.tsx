@@ -17,32 +17,23 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "MERN Stack Web Developer | Website Developer",
-    template: "%s | Professional Web Developer",
+    default: "Hire Freelance MERN Stack & Next.js Developer | ConstantineApp",
+    template: "%s | Freelance Web Developer",
   },
-  description: "Want a high-converting website? Expert Next.js, React & Tailwind dev with AI integration & top SEO. Scale your business & drive sales today!",
+  description: "Need a high-converting website built fast? Expert Next.js, React, & MERN stack developer specializing in AI API integration and database management.",
   verification: {
     google: "SVEyQsS4vdt98mcdGHJfY8t_kBgozWnG8k2NGzlehNQ",
   },
-  keywords: [
-  // AI & Database Specialized Keywords (New)
-  "AI website integration developer", 
-  "database management specialist", 
-  "LLM API integration engineer", 
-  "SQL MongoDB database developer",
-  
-  // High-Intent Local Phrases
-  "website developer near me", 
-  "where can I see website developer", 
-  "web developer in Lagos", 
-  "Lagos web design company",
-
-  // International & Core Stack Terms
-  "remote MERN stack developer", 
-  "React developer portfolio", 
-  "custom ecommerce website builder", 
-  "Figma UI design"
-],
+keywords: [
+    "hire nextjs developer lagos",
+    "freelance mern stack developer",
+    "nextjs website developer near me",
+    "react developer for startups",
+    "ai api integration services",
+    "custom ecommerce web design lagos",
+    "affordable web developer portfolio",
+    "mongodb nodejs developer remote"
+  ],
   authors: [{ name: "ConstantineApp" }],
   creator: "ConstantineApp",
   openGraph: {
