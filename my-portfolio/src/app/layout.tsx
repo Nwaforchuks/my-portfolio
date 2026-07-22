@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     default: "Hire Freelance MERN Stack & Next.js Developer | ConstantineApp",
     template: "%s | Freelance Web Developer",
   },
-  description: " "High-converting web apps built fast. Expert MERN & Next.js developer in Lagos, Nigeria serving clients globally. Specializing in AI APIs & databases.",
+  description: "High-converting web apps built fast. Expert MERN & Next.js developer in Lagos, Nigeria serving clients globally. Specializing in AI APIs & databases.",
   verification: {
     google: "SVEyQsS4vdt98mcdGHJfY8t_kBgozWnG8k2NGzlehNQ",
   },
