@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   description: "High-converting web apps built fast. Expert MERN & Next.js developer in Lagos, Nigeria serving clients globally. Specializing in AI APIs & databases.",
   alternates: {
-    canonical: "https://yourdomain.com", // FIXES potential GSC indexing errors
+    canonical: "https://constantineapp.vercel.app", // FIXES potential GSC indexing errors
   },
   verification: {
     google: "RkG6TiMYnwo7TGEEUOKrC24KiSSiwyNAodOOwQuTcys",
