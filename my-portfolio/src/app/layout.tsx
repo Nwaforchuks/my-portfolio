@@ -17,14 +17,17 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: {
-    default: "Hire Freelance MERN Stack & Next.js Developer | ConstantineApp",
-    template: "%s | Freelance Web Developer",
+    default: "MERN & Next.js Developer | ConstantineApp", // Shortened to fit under 60 chars
+    template: "%s | ConstantineApp", // Removed repetitive phrase
   },
   description: "High-converting web apps built fast. Expert MERN & Next.js developer in Lagos, Nigeria serving clients globally. Specializing in AI APIs & databases.",
-  verification: {
-    google: "SVEyQsS4vdt98mcdGHJfY8t_kBgozWnG8k2NGzlehNQ",
+  alternates: {
+    canonical: "https://yourdomain.com", // FIXES potential GSC indexing errors
   },
-keywords: [
+  verification: {
+    google: "RkG6TiMYnwo7TGEEUOKrC24KiSSiwyNAodOOwQuTcys",
+  },
+  keywords: [
     "hire nextjs developer lagos",
     "freelance mern stack developer",
     "nextjs website developer near me",
@@ -39,11 +42,11 @@ keywords: [
   openGraph: {
     title: "MERN Stack Web Developer & Designer | Global & Local",
     description: "Creating clean, stunning websites to help your business grow. Serving clients worldwide and locally in Lagos, Nigeria.",
-    url: "https://constantineapp.vercel.app", // Replace with your production domain
+    url: "https://yourdomain.com", 
     siteName: "ConstantineApp",
     images: [
       {
-        url: "https://constantineapp.vercel.app/og-image.png", // Replace with your absolute image asset URL
+        url: "https://constantineapp.vercel.app/og-image.png", 
         width: 1200,
         height: 630,
         alt: "MERN Stack Developer Portfolio Preview",
@@ -51,6 +54,12 @@ keywords: [
     ],
     locale: "en_US",
     type: "website",
+  },
+  twitter: { 
+    card: "summary_large_image",
+    title: "MERN Stack Web Developer & Designer | Global & Local",
+    description: "Creating clean, stunning websites to help your business grow.",
+    images: ["https://constantineapp.vercel.app/og-image.png"],
   },
   robots: {
     index: true,
@@ -64,6 +73,7 @@ keywords: [
     },
   },
 };
+
 
 export default function RootLayout({
   children,
