@@ -9,6 +9,7 @@ import { pageProps } from "@/src/lib/types";
 import { sendAuth } from "@/src/lib/gitToken";
 import { handleContactForm } from "./actions";
 import Link from "next/link";
+import HeroImage from "../../public/home/HeroImage.png"
 
 
 
@@ -94,7 +95,10 @@ export default async function Home(searchParams:pageProps) {
 
 
           <article className={`${style.article2}`}>
-            
+            <Image
+            src={HeroImage}
+            alt="hero image"
+            />
           </article>
         
 
@@ -135,7 +139,7 @@ export default async function Home(searchParams:pageProps) {
 
         <div id="aboutme"  className=" md:flex md:flex-row mt-[100px] md:w-[95%] ">
 
-        <section className="w-full flex flex-col justify-center items-center sm:mt-[79px] md:mt-[1rem]">
+        <section className="w-full flex flex-col justify-center items-center sm:mt-[79px] md:mt-[1rem] md:self-end">
           <article className="w-[90%] flex flex-col justify-center">
             <h3  className="font-bold text-[0.9375rem] text-[#D9D9D9] w-[70%]">
               Open Source & Contribution
@@ -162,7 +166,7 @@ export default async function Home(searchParams:pageProps) {
               About My Path
             </h3>
 
-            <p className="text-[#D9D9D9] text-[0.625rem] font-bold">
+            <p className="text-[#D9D9D9] text-[0.75rem] font-bold">
               Looking to hire a professional website developer? wether you are searching
               for expert near you in Lagos, Nigeria, or looking for remote engineer to bring
               your ideas to life, I build clean, high performance web system.
@@ -199,7 +203,7 @@ export default async function Home(searchParams:pageProps) {
               name="email"
               required
 
-              placeholder="Enter your Email" className="h-[36px] md:h-[54px] bg-[#3C3737] min-w-[293px] rounded-[10px] placeholder:text-[#D9D9D9] 
+              placeholder="Enter your Email" className="h-[36px] md:h-[54px] bg-[#3C3737] min-w-full rounded-[10px] placeholder:text-[#D9D9D9] 
                 placeholder:font-semibold pl-[0.75rem] md:mt-[1.375rem] text-[#D9D9D9] border-none outline-0 focus:right-0 " />
               <textarea
 

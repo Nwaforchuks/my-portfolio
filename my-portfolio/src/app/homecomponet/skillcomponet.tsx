@@ -10,7 +10,7 @@ export default function DatabaseDropdown() {
   const cards = frameworkImage.slice(2); // Example data array
 
   return (
-    <div className="grid grid-cols-1 gap-6 p-6 md:grid-cols-3 md:gap-3 md:p-0 ">
+    <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-3 md:p-0 ">
       {cards.map(({ id, imageSrc, altText, title, description }) => {
         const isExpanded = expandedId === id;
         
