@@ -25,7 +25,8 @@ export const metadata: Metadata = {
     canonical: "https://constantineapp.vercel.app", // FIXES potential GSC indexing errors
   },
   verification: {
-    google: "RkG6TiMYnwo7TGEEUOKrC24KiSSiwyNAodOOwQuTcys",
+    google: 'RkG6TiMYnwo7TGEEUOKrC24KiSSiwyNAodOOwQuTcys', 
+    yandex: 'b90fe31bb6b2377f',       
   },
   keywords: [
     "hire nextjs developer lagos",
